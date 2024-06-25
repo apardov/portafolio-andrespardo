@@ -1,0 +1,211 @@
+<!-- Base Template -->
+{% extends 'core/base.html' %}
+
+<!-- Content -->
+{% block content %}
+
+    <!-- Start static base -->
+    {% load static %}
+
+    <!-- Navbar Template-->
+    {% include 'core/navbar.html' %}
+    <!-- Hero -->
+    <section id="hero" class="hero align-items-stretch">
+        <div class="hero-main d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-img-developer rounded-circle m-3" src="{% static 'core/img/me.webp' %}"
+                 alt="Foto de Andrés Pardo">
+            <h1>Hola, soy Andrés Pardo</h1>
+            <h2>Desarrollo sitios web full stack y me apasiona la programación</h2>
+        </div>
+        <div class="hero-below">
+            <img class="hero-img-below img-fluid" src="{% static 'core/img/hero-below.webp' %}"
+                 alt="Lenguajes de programación">
+        </div>
+    </section>
+    <!-- About me -->
+    <section id="about-me" class="about-me dark-section">
+        <div class="section-container">
+            <h2 class="section-title">Mi historia en breve:</h2>
+            <p class="section-text">"¡Hola! Soy un Desarrollador Full Stack con más de 10 años de experiencia en
+                tecnologías de la información. Mi enfoque principal en estos últimos dos años, ha sido el desarrollo de
+                aplicaciones web full stack. He trabajado con tecnologías como Django, Python, React,
+                JavaScript, HTML, CSS, Bootstrap y Bases de datos como PostgreSQL y MySQL, que me permiten crear
+                soluciones
+                robustas y
+                escalables. <br> Me apasiona resolver problemas tanto en equipo como de forma autónoma y crear
+                interfaces de
+                usuario atractivas y responsivas.
+
+                <br> En mi portafolio, encontrarás ejemplos de proyectos en los que he trabajado, desde aplicaciones de
+                comercio electrónico hasta sistemas de gestión de contenido. Si tienes alguna pregunta o si deseas saber
+                más sobre mi experiencia, no dudes en contactarme. ¡Estoy emocionado de compartir mi trabajo
+                contigo!"</p>
+        </div>
+    </section>
+    <!-- Experience -->
+    <section id="experience" class="experience light-section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="column col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experience-title">Desarrollo Web</p>
+                    <p>Como apasionado del desarrollo web, he trabajado en proyectos que abarcan desde la creación de
+                        sitios web estáticos hasta aplicaciones web dinámicas. Mi enfoque está en un punto de
+                        equilibrio, tanto en la usabilidad como en la lógica detrás de las aplicaciones</p>
+                    <div class="badge-container">
+                        <span class="badge text-bg-color">HTML</span>
+                        <span class="badge text-bg-color">CSS</span>
+                        <span class="badge text-bg-color">Django</span>
+                        <span class="badge text-bg-color">Python</span>
+                        <span class="badge text-bg-color">JavaScript</span>
+                        <span class="badge text-bg-color">React</span>
+                    </div>
+                </div>
+                <div class="column col-12 col-md-4">
+                    <i class="bi bi-substack"></i>
+                    <p class="experience-title">Freelance</p>
+                    <p>Como profesional independiente, he trabajado en una variedad de proyectos, desde asesorias en
+                        proyectos, desarrollos web hasta soporte en infraestructura.</p>
+                    <div class="badge-container">
+                        <span class="badge text-bg-color">Soporte</span>
+                        <span class="badge text-bg-color">Proyectos</span>
+                        <span class="badge text-bg-color">Desarrollo Web</span>
+                    </div>
+                </div>
+                <div class="column col-12 col-md-4">
+                    <i class="bi bi-book"></i>
+                    <p class="experience-title">Estudiante</p>
+                    <p>Como estudiante, siempre estoy en busqueda de aprender y crecer. Me sumerjo en nuevos temas,
+                        adquiero habilidades buscando mantenerme con las últimas tendencias en mi campo.</p>
+                    <div class="badge-container">
+                        <span class="badge text-bg-color">U. Autónoma</span>
+                        <span class="badge text-bg-color">Talento Digital</span>
+                        <span class="badge text-bg-color">Coursera</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent projects -->
+    <section id="recent-projects" class="recent-projects light-section d-flex flex-column">
+        <h2 class="section-title black-text">Mis proyectos recientes</h2>
+        <h3 class="section-description">Estos son algunos de los proyectos que he realizado...</h3>
+        <div class="container text-center project-container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="{% static 'core/img/proyecto1.webp' %}" alt="">
+                        <div class="overlay">
+                            <p>Proyecto 1</p>
+                            <div class="container-icons">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-browser-chrome"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="{% static 'core/img/proyecto1.webp' %}" alt="">
+                        <div class="overlay">
+                            <p>Proyecto 2</p>
+                            <div class="container-icons">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-browser-chrome"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="{% static 'core/img/proyecto1.webp' %}" alt="">
+                        <div class="overlay">
+                            <p>Proyecto 3</p>
+                            <div class="container-icons">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-browser-chrome"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="{% static 'core/img/proyecto1.webp' %}" alt="">
+                        <div class="overlay">
+                            <p>Proyecto 4</p>
+                            <div class="container-icons">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-browser-chrome"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="{% static 'core/img/proyecto1.webp' %}" alt="">
+                        <div class="overlay">
+                            <p>Proyecto 5</p>
+                            <div class="container-icons">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-browser-chrome"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="{% static 'core/img/proyecto1.webp' %}" alt="">
+                        <div class="overlay">
+                            <p>Proyecto 6</p>
+                            <div class="container-icons">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-browser-chrome"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="contact dark-section">
+        <div class="container">
+            <div class="container rectangle text-center d-flex justify-content-evenly align-items-center">
+                <div class="row">
+                    <div class="section-title col-12 col-md-4 ">
+                        Hablemos
+                    </div>
+                    <div class="description col-12 col-md-4 ">
+                        <p>¿Estás interesado en mi perfil o tienes algún proyecto en mente? No dudes en contactarme.
+                            Estoy emocionado por las oportunidades que puedan surgir.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:and.pardo.vergara@gmail.com">
+                            <button>Contacto<i class="bi bi-envelope-check-fill ms-2"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="dark-section d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="{% static 'core/img/logo.webp' %}" width="80" alt="Logo Portafolio"
+             class="icon-footer rounded-circle">
+        <p class="footer-text textcenter">Aprendo y creo todos los días.<br> Trabajemos y avancemos juntos.</p>
+        <div class="social-media-icons d-flex flex-wrap align-items-center justify-content-center">
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            <a href="mailto:and.pardo.vergara@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                    class="bi bi-envelope-arrow-down-fill"></i></a>
+        </div>
+        <div class="copyright">Creado por Andrés Pardo (2024) &#169;</div>
+    </footer>
+{% endblock %}
