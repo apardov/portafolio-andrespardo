@@ -1,6 +1,6 @@
 # Portafolio
 
-## Tecnologias utilizadas
+## Tecnologías utilizadas
 * HTML
 * CSS
 * Bootstrap
